@@ -29,6 +29,7 @@ int main(){
     // INPUTS
     vi a; for(int i=0;i<n;i++){int val; cin>>val; a.push_back(val);}; 
     int q; cin>>q; vi query; for(int i=0;i<q;i++){int val; cin>>val; query.push_back(val);};
+    
     //REMOVING CONTINOUS DUPLICATES
     unique(a.begin(),a.end());
     int length = a.size ();
