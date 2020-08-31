@@ -19,21 +19,17 @@ using namespace std;
 
 void a_s_c(){
     ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-   #ifndef ONLINE_JUDGE
-        freopen("input.txt","r",stdin);
-        freopen("output.txt","w",stdout);
-    #endif
+
 }
 
-
-
-void solve(string str,char way){
-   
-}
 
 int main(){
     a_s_c();
-    int n; cin>>n; vi a; for(int i=0;i<n;i++){int val; cin>>val; a.push_back(val);}; int q; cin>>q; vi query; for(int i=0;i<q;i++){int val; cin>>val; query.push_back(val);};
+    int n; cin>>n; 
+    // INPUTS
+    vi a; for(int i=0;i<n;i++){int val; cin>>val; a.push_back(val);}; 
+    int q; cin>>q; vi query; for(int i=0;i<q;i++){int val; cin>>val; query.push_back(val);};
+    //REMOVING CONTINOUS DUPLICATES
     unique(a.begin(),a.end());
     int length = a.size ();
  
